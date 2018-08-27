@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+        @helper.CSRF.formField
+        <label for="place1">Name a place: </label>
+        <input type="text" name = "place1" id="place1" ><br>
+
+        <label for="adjective1">Name an Adjective: </label>
+        <input type="text" name = "adjective1" id="adjective1" ><br>
+
+        <label for="noun2">Name another noun: </label>
+        <input type="text" name = "noun2" id="noun2" ><br>
+
+        <label for="noun1">Name a Noun: </label>
+        <select name="noun1" id="noun1">
+            <option value = "house">House</option>
+            <option value = "horse">Horse</option>
+            <option value = "Ninja Blender">Ninja Blender</option>
+            <option value = "Flex Seal">Flex Seal</option>
+            <option value = "teddy bear">teddy bear</option>
+            <option value = "ShamWow">ShamWow</option>
+            <option value = "Slap Chop">Slap Chop</option>
+        </select>
+        <br>
+        <label for="verb1"> Choose a verb: </label>
+        <input type="radio" name="verb1" value="walked" checked="checked">Walked
+        <input type="radio" name="verb1" value="ran">Ran
+        <input type="radio" name="verb1" value="jumped">Jumped
+
+
+
+        <br>
+        <label for="place2">Name another Place: </label>
+        <select name="place2" id="place2">
+        <option value = "home base">home base</option>
+        <option value = "prison">prison</option>
+        <option value = "the motorcycle shop">the motorcycle shop</option>
+        <option value = "romper room">romper room</option>
+
+        </select>
+<br>
+
+
+        <input type="submit" value="Generate Story">
+</form>
+</body>
+</html>
